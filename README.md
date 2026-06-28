@@ -75,3 +75,56 @@ By integrating these capabilities into a unified system, the project reduces man
 * **🔄 End-to-End Automation**
 
   * A single entry-point script (`launch_all.py`) orchestrates the complete workflow from data acquisition to report delivery.
+
+## 🔄 System Workflow
+
+The Financial Intelligence Analytics System follows an end-to-end automated workflow that transforms raw financial market data into actionable insights and professional reports.
+
+<p align="center">
+  <img src="assets/system_workflow.png" alt="System Workflow" width="1000">
+</p>
+
+### Workflow Overview
+
+1. **System Initialization**
+
+   * The application is launched through `launch_all.py`, which orchestrates the complete workflow.
+   * Configuration settings are loaded, and the required services are initialized.
+
+2. **Data Acquisition**
+
+   * Historical stock prices, live market data, and financial statements are collected from external data sources.
+   * Multiple data collection modules work together to retrieve the latest available information.
+
+3. **Data Processing (ETL)**
+
+   * Raw datasets are cleaned, validated, standardized, and transformed into structured formats.
+   * Processed datasets are prepared for storage, analytics, and machine learning.
+
+4. **Database Storage**
+
+   * Cleaned financial data is stored in a SQLite database for efficient querying and long-term persistence.
+
+5. **Machine Learning**
+
+   * Predictive models analyze historical market trends and generate stock price forecasts.
+   * Trained models are stored for future predictions and reuse.
+
+6. **Analytics & Visualization**
+
+   * Interactive dashboards present financial metrics, market trends, and predictive insights.
+   * Visualizations help users understand market performance at a glance.
+
+7. **Report Generation**
+
+   * The system generates comprehensive HTML dashboards and Excel reports summarizing financial performance and predictive results.
+
+8. **Report Distribution**
+
+   * HTML reports are automatically delivered via email.
+   * Reports can also be uploaded to Google Drive for backup and easy sharing.
+
+### End-to-End Automation
+
+The system integrates data collection, processing, storage, machine learning, visualization, reporting, and distribution into a single automated workflow. This minimizes manual intervention while ensuring timely and consistent financial analysis.
+
